@@ -14,6 +14,14 @@ const cities = {
   756135: "Warsaw",
   687116: "Zhmerynka",
   686967: "Zhytomyr",
+  616051: "Yerevan",
+  3081368: "Wrocław",
+  2998324: "Lille",
+  5128638: "New York",
+  4887398: "Chicago",
+  4164138: "Miami",
+  6167865: "Toronto",
+  2800866: "Brussels",
 };
 
 for (let key in cities) {
