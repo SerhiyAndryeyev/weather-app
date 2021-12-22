@@ -1,0 +1,51 @@
+html {
+    font-size: 62.5%; /* 1rem = 10px on default browser settings (16px) */
+}
+body {
+    font-size: 18px; /* setting PX unit for browsers that dont support rem below */
+    font-size: 1.8rem; /* default to be used, browsers that dont support REM will use PX above */
+    line-height: 1.5;
+    font-family: sans-serif; /* used current font-family used on live website */
+    color: #283533;
+}
+body {
+position: relative;
+    background-color: #548dc6;
+    min-width: 900px;
+    min-height: 900px;
+    }
+
+hr{
+  size: 1;
+  color:#706f64;
+  width:80%;
+  align:center;
+}
+
+.container{
+  display: flex;
+  flex-flow: column nowrap;
+  background-color:#eee9e4;
+  border: #fcb310 2px solid;
+  border-radius: 3px;
+  width: 400px;
+  height: 600px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.selection-wrapper,
+.temperature-show,
+.icon-show,
+.weather-out {
+min-height: 30px;
+margin-left: auto;
+margin-right: auto;
+padding: 10px;
+text-align: center;
+}
+
+.selection-wrapper {
+  padding-top: 20px;
+}
