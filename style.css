@@ -1,9 +1,14 @@
+* {
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+}
 html {
     font-size: 62.5%; /* 1rem = 10px on default browser settings (16px) */
 }
 body {
-    font-size: 18px; /* setting PX unit for browsers that dont support rem below */
-    font-size: 1.8rem; /* default to be used, browsers that dont support REM will use PX above */
+    font-size: 20px; /* setting PX unit for browsers that dont support rem below */
+    font-size: 2rem; /* default to be used, browsers that dont support REM will use PX above */
     line-height: 1.5;
     font-family: sans-serif; /* used current font-family used on live website */
     color: #283533;
@@ -11,15 +16,19 @@ body {
 body {
 position: relative;
     background-color: #548dc6;
-    min-width: 900px;
-    min-height: 900px;
+    min-width: auto;
+    min-height: auto;
     }
+
 
 hr{
   size: 1;
   color:#706f64;
   width:80%;
-  align:center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .container{
@@ -36,8 +45,10 @@ hr{
 }
 
 .selection-wrapper,
+.city-choise-show,
 .temperature-show,
 .icon-show,
+.weather-description,
 .weather-out {
 min-height: 30px;
 margin-left: auto;

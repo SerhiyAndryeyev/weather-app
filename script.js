@@ -1,15 +1,8 @@
-// create select' list
-
-// html = "";
-// const cities = {
-//   23232: "london",
-//   33456: "minsk",
-//   //и так далее.
-// };
-// for (var key in obj) {
-//   html += "<option value=" + key + ">" + obj[key] + "</option>";
-// }
-// document.getElementById("cities").innerHTML = html;
+//
+// достать текст из выбраного оптион из селекта:
+// let index = ваш_select.selectedIndex;
+// let text = ваш_select.options[index].text
+//
 
 const param = {
   "url": "https://api.openweathermap.org/data/2.5/",
@@ -29,7 +22,13 @@ function showWeather(data) {
   const temperature = `🌡 ${Math.round(data.main.temp)}&deg;`;
   const humidity = `humidity is ${data.main.humidity}&#37;`;
   const pressure = `pressure is ${data.main.pressure}mbar`;
+  const iconId = data.weather[0].icon;
+  console.log('iconId= ', iconId);
+
+  document.querySelector('.city-choise-show').innerHTML = `The weather in ${data.name}:`;
   document.querySelector('.temperature-show').innerHTML = temperature;
+  document.querySelector('.icon-show').innerHTML = `<img src="http://openweathermap.org/img/wn/${iconId}@2x.png" alt="weather icon">`;
+  document.querySelector('.weather-description').textContent = `${data.weather[0].description}`;
   document.querySelector('.weather-out').innerHTML = `${humidity}<br>${pressure}`;
 
 }
