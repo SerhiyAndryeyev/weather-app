@@ -3,6 +3,24 @@
 // let index = ваш_select.selectedIndex;
 // let text = ваш_select.options[index].text
 //
+// create select' list:
+
+let options = ``;
+const cities = {
+  703448: "Kyiv",
+  702550: "Lviv",
+  2643743: "London",
+  6269531: "Paris",
+  756135: "Warsaw",
+  687116: "Zhmerynka",
+  686967: "Zhytomyr",
+};
+
+for (let key in cities) {
+  options += `<option value="${key}">${cities[key]}</option>`;
+}
+
+document.getElementById("cities").innerHTML = options;
 
 const param = {
   "url": "https://api.openweathermap.org/data/2.5/",
