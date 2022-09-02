@@ -1,10 +1,3 @@
-//
-// достать текст из выбраного оптион из селекта:
-// let index = ваш_select.selectedIndex;
-// let text = ваш_select.options[index].text
-//
-// create select' list:
-
 let options = ``;
 const cities = {
   703448: "Kyiv",
